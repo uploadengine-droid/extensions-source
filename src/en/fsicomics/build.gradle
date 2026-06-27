@@ -1,0 +1,13 @@
+ext {
+    extName = 'FsiComics'
+    extClass = '.FsiComics'
+    extVersionCode = 1
+    isNsfw = true
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+dependencies {
+    implementation project(':lib-multisrc:madara')
+}
