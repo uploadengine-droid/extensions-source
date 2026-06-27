@@ -6,7 +6,12 @@ ext {
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+
+// Explicitly configures Android properties required by AGP 9.x
+android {
+    namespace "eu.kanade.tachiyomi.extension.en.fsicomics"
+    compileSdk 35
+}
 
 dependencies {
     implementation project(':lib-multisrc:madara')
